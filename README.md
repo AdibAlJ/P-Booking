@@ -1,6 +1,6 @@
 # P-Booking
 
-P-Booking adalah aplikasi pemesanan berbasis web yang dirancang untuk memudahkan pengguna dalam melakukan booking layanan secara online, seperti pemesanan tempat, jadwal, atau fasilitas tertentu.
+P-Booking adalah aplikasi pemesanan berbasis web yang dirancang untuk memudahkan pengguna dalam melakukan booking layanan futsal secara online, seperti pemesanan tempat, jadwal, atau fasilitas tertentu.
 
 ## 🚀 Fitur Utama
 
