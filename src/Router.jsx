@@ -26,7 +26,7 @@ const AppRouter = () => {
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/invoices" element={<Invoices />} />
           <Route path="/form" element={<Form />} />
-          <Route path="/calendar" element={<Calendar />} />
+          <Route path="/Jadwal" element={<Calendar />} />
           <Route path="/bar" element={<Bar />} />
           <Route path="/pie" element={<Pie />} />
           <Route path="/stream" element={<Stream />} />

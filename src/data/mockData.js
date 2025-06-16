@@ -268,54 +268,55 @@ export const mockDataInvoices = [
 
 export const mockAccordionData = [
   {
-    question: "How do I create a new user?",
+    question: "Bagaimana cara melakukan pemesanan lapangan?",
     details:
-      "To create a new user, navigate to the Users section in the admin dashboard. Click on the 'Add User' button and fill in the required information such as username, email, and password. Then, click on the 'Save' button to create the user.",
+      "Untuk melakukan pemesanan, masuk ke akun Anda, lalu pilih menu 'Jadwal Lapangan'. Pilih tanggal dan jam yang diinginkan, kemudian klik 'Pesan'. Lanjutkan ke proses pembayaran untuk menyelesaikan pemesanan.",
   },
   {
-    question: "How can I manage permissions for users?",
+    question: "Apa saja metode pembayaran yang tersedia?",
     details:
-      "To manage permissions for users, go to the Permissions section in the admin dashboard. Here, you can assign or revoke specific permissions for each user by selecting the user and adjusting their permissions accordingly.",
+      "Kami menyediakan berbagai metode pembayaran seperti transfer bank, QRIS, dan e-wallet. Anda dapat memilih metode yang paling sesuai saat melakukan checkout.",
   },
   {
-    question: "What is the process for adding a new product?",
+    question: "Bagaimana cara membatalkan atau mengubah jadwal pemesanan?",
     details:
-      "To add a new product, navigate to the Products section in the admin dashboard. Click on the 'Add Product' button and fill in the details such as product name, description, price, and images. Finally, click on the 'Save' button to add the product.",
+      "Masuk ke akun Anda dan buka menu 'Daftar Pemesanan'. Pilih pemesanan yang ingin dibatalkan atau diubah, lalu klik opsi 'Batalkan' atau 'Ubah Jadwal' jika masih dalam batas waktu yang diperbolehkan.",
   },
   {
-    question: "How do I update existing user information?",
+    question: "Apakah saya bisa memesan lebih dari satu jam?",
     details:
-      "To update existing user information, find the user in the Users section of the admin dashboard. Click on the user to view their details, then click on the 'Edit' button. Update the necessary information and click on the 'Save' button to apply the changes.",
+      "Ya, Anda dapat memesan lebih dari satu jam sekaligus selama slot waktu tersebut masih tersedia. Silakan pilih jam berturut-turut saat melakukan pemesanan.",
   },
   {
-    question: "What are the steps to delete a product?",
+    question: "Bagaimana jika saya tidak menerima konfirmasi pembayaran?",
     details:
-      "To delete a product, navigate to the Products section in the admin dashboard. Find the product you want to delete and click on the 'Delete' button. Confirm the action when prompted, and the product will be permanently removed from the system.",
+      "Silakan periksa email Anda terlebih dahulu. Jika tidak ada konfirmasi, buka menu 'Pembayaran' di akun Anda untuk memeriksa status transaksi. Jika masih ada kendala, hubungi tim dukungan kami.",
   },
   {
-    question: "How can I view sales reports?",
+    question: "Apakah saya bisa melihat riwayat pemesanan saya?",
     details:
-      "To view sales reports, go to the Reports section in the admin dashboard. Here, you can generate various reports such as sales by day, month, or year, top-selling products, and revenue trends.",
+      "Tentu saja. Anda dapat melihat seluruh riwayat pemesanan dengan masuk ke akun Anda dan membuka menu 'Daftar Pemesanan'. Di sana Anda bisa melihat status, tanggal, dan bukti pembayaran.",
   },
   {
-    question: "What options are available for managing customer orders?",
+    question: "Apakah tersedia sistem booking untuk penyewa rutin?",
     details:
-      "To manage customer orders, navigate to the Orders section in the admin dashboard. Here, you can view all orders, process pending orders, update order status, and manage order fulfillment and shipping details.",
+      "Ya, kami menyediakan fitur pemesanan rutin mingguan atau bulanan. Silakan hubungi admin melalui menu kontak untuk aktivasi pemesanan berkala.",
   },
   {
-    question: "How do I customize the appearance of the dashboard?",
+    question:
+      "Bagaimana jika saya mengalami kendala saat login atau mendaftar?",
     details:
-      "To customize the appearance of the dashboard, go to the Settings section in the admin dashboard. Here, you can adjust various settings such as theme colors, layout options, and dashboard widgets.",
+      "Pastikan email dan password Anda sudah benar. Jika masih mengalami masalah, gunakan fitur 'Lupa Password' atau hubungi tim dukungan melalui email.",
   },
   {
-    question: "What security measures are in place to protect user data?",
+    question: "Apakah bisa mengganti data profil dan password?",
     details:
-      "We take security seriously and have implemented various measures to protect user data. These include encryption of sensitive information, regular security audits, and compliance with industry standards and regulations.",
+      "Ya, Anda dapat mengubah nama, nomor HP, dan password Anda melalui menu 'Profil Saya' di dashboard setelah login.",
   },
   {
-    question: "How can I contact support for assistance?",
+    question: "Bagaimana cara menghubungi tim P-Booking jika ada masalah?",
     details:
-      "For assistance or support inquiries, please contact our customer support team via email at support@example.com or by phone at 1-800-123-4567. Our support team is available to assist you with any questions or issues you may have.",
+      "Anda dapat menghubungi kami melalui email support@p-booking.com atau melalui WhatsApp di nomor 0812-3456-7890. Tim kami siap membantu setiap hari kerja pukul 08.00 - 21.00.",
   },
 ];
 

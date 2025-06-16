@@ -52,7 +52,7 @@ const Calendar = () => {
   };
   return (
     <Box m="20px">
-      <Header title="Calendar" subtitle="Full Calendar Interactive Page" />
+      <Header title="JADWAL LAPANGAN" subtitle="Informasi penjadwalan lapangan" />
       <Box display="flex" justifyContent="space-between" gap={2}>
         {/* CALENDAR SIDEBAR */}
         <Box
@@ -62,7 +62,7 @@ const Calendar = () => {
           p="15px"
           borderRadius="4px"
         >
-          <Typography variant="h5">Events</Typography>
+          <Typography variant="h5">Event</Typography>
           <List>
             {currentEvents.map((event) => (
               <ListItem

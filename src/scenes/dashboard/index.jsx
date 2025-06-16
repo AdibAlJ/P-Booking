@@ -32,32 +32,7 @@ function Dashboard() {
   const isXsDevices = useMediaQuery("(max-width: 436px)");
   return (
     <Box m="20px">
-      <Box display="flex" justifyContent="space-between">
-        <Header title="DASHBOARD" subtitle="Welcome to your dashboard" />
-        {!isXsDevices && (
-          <Box>
-            <Button
-              variant="contained"
-              sx={{
-                bgcolor: colors.blueAccent[700],
-                color: "#fcfcfc",
-                fontSize: isMdDevices ? "14px" : "10px",
-                fontWeight: "bold",
-                p: "10px 20px",
-                mt: "18px",
-                transition: ".3s ease",
-                ":hover": {
-                  bgcolor: colors.blueAccent[800],
-                },
-              }}
-              startIcon={<DownloadOutlined />}
-            >
-              DOWNLOAD REPORTS
-            </Button>
-          </Box>
-        )}
-      </Box>
-
+      <Header title="DASHBOARD" subtitle="Informasi Tentang Data Pengguna dan Admin" />
       {/* GRID & CHARTS */}
       <Box
         display="grid"
@@ -80,8 +55,8 @@ function Dashboard() {
           justifyContent="center"
         >
           <StatBox
-            title="11,361"
-            subtitle="Email Sent"
+            title="11"
+            subtitle="Pemesanan"
             progress="0.75"
             increase="+14%"
             icon={
@@ -99,8 +74,8 @@ function Dashboard() {
           justifyContent="center"
         >
           <StatBox
-            title="431,225"
-            subtitle="Sales Obtained"
+            title="431.092"
+            subtitle="Penjualan yg diperoleh"
             progress="0.50"
             increase="+21%"
             icon={
@@ -118,8 +93,8 @@ function Dashboard() {
           justifyContent="center"
         >
           <StatBox
-            title="32,441"
-            subtitle="New Clients"
+            title="32"
+            subtitle="Client Baru"
             progress="0.30"
             increase="+5%"
             icon={
@@ -129,30 +104,9 @@ function Dashboard() {
             }
           />
         </Box>
-        <Box
-          gridColumn="span 3"
-          backgroundColor={colors.primary[400]}
-          display="flex"
-          alignItems="center"
-          justifyContent="center"
-        >
-          <StatBox
-            title="1,325,134"
-            subtitle="Traffic Received"
-            progress="0.80"
-            increase="+43%"
-            icon={
-              <Traffic
-                sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
-              />
-            }
-          />
-        </Box>
-
-        {/* ---------------- Row 2 ---------------- */}
 
         {/* Line Chart */}
-        <Box
+        {/* <Box
           gridColumn={
             isXlDevices ? "span 8" : isMdDevices ? "span 6" : "span 3"
           }
@@ -190,7 +144,7 @@ function Dashboard() {
           <Box height="250px" mt="-20px">
             <LineChart isDashboard={true} />
           </Box>
-        </Box>
+        </Box> */}
 
         {/* Transaction Data */}
         <Box
@@ -201,7 +155,7 @@ function Dashboard() {
         >
           <Box borderBottom={`4px solid ${colors.primary[500]}`} p="15px">
             <Typography color={colors.gray[100]} variant="h5" fontWeight="600">
-              Recent Transactions
+              Transaksi Terbaru
             </Typography>
           </Box>
 
@@ -240,7 +194,7 @@ function Dashboard() {
           ))}
         </Box>
 
-        {/* Revenue Details */}
+        {/* Revenue Details
         <Box
           gridColumn={isXlDevices ? "span 4" : "span 3"}
           gridRow="span 2"
@@ -269,9 +223,9 @@ function Dashboard() {
               Includes extra misc expenditures and costs
             </Typography>
           </Box>
-        </Box>
+        </Box> */}
 
-        {/* Bar Chart */}
+        {/* Bar Chart
         <Box
           gridColumn={isXlDevices ? "span 4" : "span 3"}
           gridRow="span 2"
@@ -293,10 +247,10 @@ function Dashboard() {
           >
             <BarChart isDashboard={true} />
           </Box>
-        </Box>
+        </Box> */}
 
         {/* Geography Chart */}
-        <Box
+        {/* <Box
           gridColumn={isXlDevices ? "span 4" : "span 3"}
           gridRow="span 2"
           backgroundColor={colors.primary[400]}
@@ -313,7 +267,7 @@ function Dashboard() {
           >
             <GeographyChart isDashboard={true} />
           </Box>
-        </Box>
+        </Box> */}
       </Box>
     </Box>
   );

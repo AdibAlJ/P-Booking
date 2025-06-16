@@ -76,7 +76,7 @@ const SideBar = () => {
                   textTransform="capitalize"
                   color={colors.greenAccent[500]}
                 >
-                  Argon
+                  P-Booking
                 </Typography>
               </Box>
             )}
@@ -103,14 +103,14 @@ const SideBar = () => {
           />
           <Box sx={{ textAlign: "center" }}>
             <Typography variant="h3" fontWeight="bold" color={colors.gray[100]}>
-              Tony Stark
+              Junaidi
             </Typography>
             <Typography
               variant="h6"
               fontWeight="500"
               color={colors.greenAccent[500]}
             >
-              VP Fancy Admin
+              Admin
             </Typography>
           </Box>
         </Box>
@@ -135,13 +135,6 @@ const SideBar = () => {
             icon={<DashboardOutlined />}
           />
         </Menu>
-        <Typography
-          variant="h6"
-          color={colors.gray[300]}
-          sx={{ m: "15px 0 5px 20px" }}
-        >
-          {!collapsed ? "Data" : " "}
-        </Typography>{" "}
         <Menu
           menuItemStyles={{
             button: {
@@ -154,31 +147,30 @@ const SideBar = () => {
           }}
         >
           <Item
-            title="Manage Team"
+            title="Jadwal Lapangan"
+            path="/jadwal"
+            colors={colors}
+            icon={<CalendarTodayOutlined />}
+          />
+          <Item
+            title="Daftar Pemesan"
             path="/team"
             colors={colors}
             icon={<PeopleAltOutlined />}
           />
           <Item
-            title="Contacts Information"
-            path="/contacts"
-            colors={colors}
-            icon={<ContactsOutlined />}
-          />
-          <Item
-            title="Invoices Balances"
+            title="Pembayaran"
             path="/invoices"
             colors={colors}
             icon={<ReceiptOutlined />}
           />
+          <Item
+            title="Pengguna"
+            path="/contacts"
+            colors={colors}
+            icon={<ContactsOutlined />}
+          />
         </Menu>
-        <Typography
-          variant="h6"
-          color={colors.gray[300]}
-          sx={{ m: "15px 0 5px 20px" }}
-        >
-          {!collapsed ? "Pages" : " "}
-        </Typography>
         <Menu
           menuItemStyles={{
             button: {
@@ -190,72 +182,17 @@ const SideBar = () => {
             },
           }}
         >
-          <Item
+          {/* <Item
             title="Profile Form"
             path="/form"
             colors={colors}
             icon={<PersonOutlined />}
-          />
+          /> */}
           <Item
-            title="Calendar"
-            path="/calendar"
-            colors={colors}
-            icon={<CalendarTodayOutlined />}
-          />
-          <Item
-            title="FAQ Page"
+            title="FAQ"
             path="/faq"
             colors={colors}
             icon={<HelpOutlineOutlined />}
-          />
-        </Menu>
-        <Typography
-          variant="h6"
-          color={colors.gray[300]}
-          sx={{ m: "15px 0 5px 20px" }}
-        >
-          {!collapsed ? "Charts" : " "}
-        </Typography>
-        <Menu
-          menuItemStyles={{
-            button: {
-              ":hover": {
-                color: "#868dfb",
-                background: "transparent",
-                transition: ".4s ease",
-              },
-            },
-          }}
-        >
-          <Item
-            title="Bar Chart"
-            path="/bar"
-            colors={colors}
-            icon={<BarChartOutlined />}
-          />
-          <Item
-            title="Pie Chart"
-            path="/pie"
-            colors={colors}
-            icon={<DonutLargeOutlined />}
-          />
-          <Item
-            title="Line Chart"
-            path="/line"
-            colors={colors}
-            icon={<TimelineOutlined />}
-          />
-          <Item
-            title="Geography Chart"
-            path="/geography"
-            colors={colors}
-            icon={<MapOutlined />}
-          />
-          <Item
-            title="Stream Chart"
-            path="/stream"
-            colors={colors}
-            icon={<WavesOutlined />}
           />
         </Menu>
       </Box>

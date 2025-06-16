@@ -5,7 +5,7 @@ import { mockAccordionData } from "../../data/mockData";
 const FAQ = () => {
   return (
     <Box m="20px">
-      <Header title="FAQ" subtitle="Frequently Asked Questions Page" />
+      <Header title="FAQ" subtitle="Frequently Asked Questions" />
       {mockAccordionData.map((accordion, index) => (
         <AccordionItem key={index} {...accordion} />
       ))}
